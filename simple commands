@@ -1,0 +1,45 @@
+import discord
+from discord.ext import commands
+import random
+import asyncio
+import time
+import io
+import contextlib
+import os
+import sys
+import time
+import shlex
+import shutil
+import inspect
+import traceback
+import functools
+import random
+import youtube_dl
+import base64
+from functools import wraps
+import logging
+import re
+
+from discord import utils
+from discord.object import Object
+from discord.enums import ChannelType
+from discord.voice_client import VoiceClient
+from discord.ext import commands
+from discord.object import Object
+from discord.enums import ChannelType
+from discord.voice_client import VoiceClient
+
+from io import BytesIO
+from functools import wraps
+from textwrap import dedent
+from datetime import timedelta
+from random import choice, shuffle, randint, uniform
+from collections import defaultdict
+
+bot =commands.Bot(command_prefix='prefix', description='My Discord bot description')
+
+@bot.command()
+async def hi():  
+    """to authorise me to your server"""
+    await bot.say('***Hello! am MEMO! please authorise me here : https://discordapp.com/oauth2/authorize?&client_id=178966559325159428&scope=bot&permissions=8*** *And type !!!help for all my commands*https://discord.gg/012DgfJtTPOVFu48u join the server for more information ')
+
