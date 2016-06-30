@@ -9,9 +9,7 @@ then you need to have these installed:
 .Python 3.4.2+
 .pip (latest version)
 .discord.py
-But mostly make sure to install discord!
+But make sure to install discord!
 please visit 
-https://github.com/Rapptz/discord.py
-helpful information!
-Or here: 
-https://github.com/Twentysix26/Red-DiscordBot
+https://github.com/Rapptz/discord.py for more information!
+
