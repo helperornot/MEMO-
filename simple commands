@@ -38,8 +38,22 @@ from collections import defaultdict
 
 bot =commands.Bot(command_prefix='prefix', description='My Discord bot description')
 
-@bot.command()
-async def hi():  
-    """to authorise me to your server"""
-    await bot.say('***Hello! am MEMO! please authorise me here : https://discordapp.com/oauth2/authorize?&client_id=178966559325159428&scope=bot&permissions=8*** *And type !!!help for all my commands*https://discord.gg/012DgfJtTPOVFu48u join the server for more information ')
+@bot.command(pass_context=True)
+async def hi(ctx, member: discord.Member = None):
+    """to authorize me to your server"""
+    if member is None:
+        member = ctx.message.author
+    await bot.say("""
+Hello! __**{0}**__
+
+__**MEMO!**__
+▪ A friendly bot for everyone!
+▪ **Authorize** me here:
+▪ ***https://discordapp.com/oauth2/authorize?&client_id=178966559325159428&scope=bot&permissions=8***
+▪ ***My creator: @Little Elf!#1095 You might want to freind him and PM him for more information about me!***
+▪ Type "**!!!help**" for the command list.
+▪ **Join the my home  :house_with_garden: for more information about me!**
+▪ *Share me with everyone you know!*
+▪ *Am MEMO! not Nemo! :stuck_out_tongue:*
+▪ https://discord.gg/012DgfJtTPOXTdTX5""".format(member))
 
